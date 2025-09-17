@@ -10,16 +10,17 @@ import java.util.List;
 public class CurrencyRepositoryImpl implements CurrencyRepository {
 
     private   List<CurrencyEntity> database = new ArrayList<>();
+    private static  Integer  IDCounter = 1;
 
     @Override
     public void addAccount(CurrencyEntity profile) {
         database.add(
                 new CurrencyEntity(
-                        profile.getID(),
                         profile.getName(),
                         profile.getCountry(),
                         profile.getBalance()
                 ));
+
 
 
     }

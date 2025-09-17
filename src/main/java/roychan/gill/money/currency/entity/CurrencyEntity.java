@@ -1,5 +1,7 @@
 package roychan.gill.money.currency.entity;
 
+import roychan.gill.money.currency.utill.AutoIncrementForID;
+
 import java.util.Date;
 
 public class CurrencyEntity {
@@ -22,9 +24,11 @@ public class CurrencyEntity {
     }
 
     public CurrencyEntity(String name, String country, Long balance) {
+        this.ID = AutoIncrementForID.genereateID();
         this.name = name;
         this.country = country;
         this.balance = balance;
+        this.created_at = new Date(System.currentTimeMillis());
     }
 
     public Integer getID() {
