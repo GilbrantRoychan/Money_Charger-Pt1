@@ -23,11 +23,12 @@ public class CurrencyService {
             System.out.println("Negara: "+data.getCountry());
             System.out.println("Total saldo: " + FormatCurrency.formatCurrency(data));
             System.out.println("Created_at: " + data.getCreated_at());
+            System.out.println("Created_at: " + data.getBalance_updateAt());
 
             System.out.println();
         });
 
-//        TODO: membuat bagaimana Total saldo bisa di I18N
+
 
     }
 }

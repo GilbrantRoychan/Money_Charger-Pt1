@@ -33,4 +33,24 @@ public class RepositoryTest {
         currencyRepository.addAccount(test2);
         System.out.println(currencyRepository.getAllData().size());
     }
+
+    @Test
+    void testTransfer() {
+
+        var ProfileIndonesia =new CurrencyEntity("Budi", "Indonesia", 12000L);
+        var ProfileInggirs =new CurrencyEntity("Angel", "Inggris", 12L);
+        var ProfileJepang =new CurrencyEntity("Budi", "Jepang", 1000L);
+
+        currencyRepository.addAccount(ProfileIndonesia);
+        currencyRepository.addAccount(ProfileInggirs);
+        currencyRepository.addAccount(ProfileJepang);
+
+        // simulasi melakukan transfer
+
+
+        currencyService.showData();
+        System.out.println("Update============");
+
+
+    }
 }
