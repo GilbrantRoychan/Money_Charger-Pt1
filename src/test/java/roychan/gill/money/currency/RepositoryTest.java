@@ -32,6 +32,5 @@ public class RepositoryTest {
         currencyRepository.addAccount(test1);
         currencyRepository.addAccount(test2);
         System.out.println(currencyRepository.getAllData().size());
-
     }
 }

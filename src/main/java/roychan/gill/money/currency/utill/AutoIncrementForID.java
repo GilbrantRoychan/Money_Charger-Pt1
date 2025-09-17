@@ -1,6 +1,6 @@
 package roychan.gill.money.currency.utill;
 
-public class AutoIncrementForID {
+public class  AutoIncrementForID {
 
     private static Integer   ID_Counter = 0;
 

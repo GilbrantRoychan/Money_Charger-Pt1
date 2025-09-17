@@ -4,6 +4,8 @@ import roychan.gill.money.currency.utill.AutoIncrementForID;
 
 import java.util.Date;
 
+import static roychan.gill.money.currency.utill.AutoIncrementForID.genereateID;
+
 public class CurrencyEntity {
     private  Integer ID;
     private  String name;
@@ -24,7 +26,7 @@ public class CurrencyEntity {
     }
 
     public CurrencyEntity(String name, String country, Long balance) {
-        this.ID = AutoIncrementForID.genereateID();
+        this.ID = genereateID();
         this.name = name;
         this.country = country;
         this.balance = balance;
